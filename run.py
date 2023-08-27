@@ -28,7 +28,7 @@ if __name__ == '__main__':
         # Create the first subplot for left image
         plt.subplot(3, 1, 1)
         plt.imshow(img_left)
-        plt.title('Left Image (KITTI Dataset')
+        plt.title('Left Image (KITTI Dataset)')
         plt.axis('off')
         # Create the first subplot for disparity map
         plt.subplot(3, 1, 2)
