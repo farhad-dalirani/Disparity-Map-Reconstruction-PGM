@@ -27,17 +27,17 @@ if __name__ == '__main__':
         plt.figure(figsize=(10, 9))
         # Create the first subplot for left image
         plt.subplot(3, 1, 1)
-        plt.imshow(img_left)
+        plt.imshow(img_left, cmap='gray')
         plt.title('Left Image (KITTI Dataset)')
         plt.axis('off')
         # Create the first subplot for disparity map
         plt.subplot(3, 1, 2)
-        plt.imshow(img_disparity)
+        plt.imshow(img_disparity, cmap='inferno')
         plt.title('Disparity Map (Siamese CNN)')
         plt.axis('off')  
         # Create the second subplot for refined disparity map
         plt.subplot(3, 1, 3)
-        plt.imshow(enhanced_disparity_map)
+        plt.imshow(enhanced_disparity_map, cmap='inferno')
         plt.title('Enhanced Disparity Map By Designed Factor Graph')
         plt.axis('off')  
         plt.tight_layout()
